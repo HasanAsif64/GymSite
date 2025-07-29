@@ -1,153 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Club Home</title>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
-
-
-    <style>
-    html,body{
-     background: url('img/image.jpg');
-    
-    
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Club Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      background: url('img/image.jpg');
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
     }
-    .navbar{
-        width:auto;
-        background-color: transparent;
-        display: flex;
-        justify-content: left;
-        margin-bottom: 300px;
+
+    .navbar {
+      width: auto;
+      background-color: transparent;
+      display: flex;
+      justify-content: left;
+      margin-bottom: 300px;
     }
-#brandname{
-    border: none;
-    background-color: transparent;
-    
-}
-#brandname a{
-    text-decoration:none;
-    color: white;
-    
-    font-weight: bold;
-    font-size: larger;
-    margin-left: 30px;
-    
-    
-}
-#list{
-    color: white;
-    display: flex;
-    float: left;
-    list-style: none;
-    flex-direction: row;
-    margin-top:21px;
-    margin-left: 40px;
-    
-    
-}
-#list a{
-    text-decoration: none;
-    margin-top: 30px;
-    margin-right: 50px;
-    color: white;
 
-    
-}
-#list a:hover{
-    color: royalblue;
-}
-.quote{
-   margin-left: 40px;
-    font-family: " 'Anton', sans-serif";
-    font-weight: bolder;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    margin-right: 400px;
-    
+    #brandname {
+      border: none;
+      background-color: transparent;
+    }
 
-}
-.button{
-    display: inline-block;
-  background-color: red;
-  color: white;
-  padding: 20px 60px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 2px solid black;
-  border-radius: 4px;
-  transition: background-color 0.3s;
- margin-left: 470px;
- margin-top: 40px;
-   
-}
+    #brandname a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: larger;
+      margin-left: 30px;
+    }
 
-.button a{
-    
-    color: rgb(247, 242, 242);
-    background-color: red;
-    padding: 4px 0px;
-    text-decoration: none;
-    align-items:center;
-    font-size: large;
-  
-    
-}
-.button a:hover{
-    color: royalblue;
-}
+    #list {
+      color: white;
+      display: flex;
+      float: left;
+      list-style: none;
+      flex-direction: row;
+      margin-top: 21px;
+      margin-left: 40px;
+    }
 
+    #list a {
+      text-decoration: none;
+      margin-top: 30px;
+      margin-right: 50px;
+      color: white;
+    }
 
-    </style>
+    #list a:hover {
+      color: royalblue;
+    }
+
+    .quote {
+      margin-left: 40px;
+      font-family: 'Anton', sans-serif;
+      font-weight: bolder;
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      margin-right: 400px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: red;
+      color: white;
+      padding: 20px 60px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid black;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      margin-left: 470px;
+      margin-top: 40px;
+    }
+
+    .button a {
+      color: rgb(247, 242, 242);
+      background-color: red;
+      padding: 4px 0px;
+      text-decoration: none;
+      align-items: center;
+      font-size: large;
+    }
+
+    .button a:hover {
+      color: royalblue;
+    }
+
+    /* 🔽 Responsive Styles for Mobile */
+    @media screen and (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 100px;
+      }
+
+      #brandname {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      #list {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      #list a {
+        margin: 10px 0;
+      }
+
+      .quote {
+        font-size: 28px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+      }
+
+      .button {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px 30px;
+      }
+
+      .button a {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="navbar">
-        <button id="brandname">
-            <h2>
-               <a href="#">Fitness Club</a>
-            </h2>
-        </button>
+  <header class="navbar">
+    <button id="brandname">
+      <h2>
+        <a href="#">Fitness Club</a>
+      </h2>
+    </button>
 
     <ul id="list">
-       <li>
-     <a href="#"> Classes</a> 
-       </li>
-        <li>
-     <a href="#"> Personal Workouts</a>   
-       </li>
-       <li>
-      <a href="fee1.html"> Prices and Plans</a>   
-       </li>
-        <li>
-      <a href="#"> Sign Up</a>  
-       </li>
- 
+      <li><a href="#">Classes</a></li>
+      <li><a href="#">Personal Workouts</a></li>
+      <li><a href="fee1.html">Prices and Plans</a></li>
+      <li><a href="#">Sign Up</a></li>
     </ul>
+  </header>
 
-    </header>
-    <br>
+  <div class="quote">
+    IT'S ALL ABOUT WHAT YOU CAN <br> ACHIEVE
+  </div>
 
-<div class="quote">
-     
-   IT'S ALL ABOUT WHAT YOU CAN 
-   <br>
-   ACHIEVE
-    
-</div>
-
-<div class="button">
-
-        <a href="home.html">Get Started</a>
-   
-
-    
-</div>
+  <div class="button">
+    <a href="home.html">Get Started</a>
+  </div>
 </body>
-</html> 
+</html>
